@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-
+import "./shoppingCart.css"
 function ShoppingCart({ Cart, removeFromShoppingCart }) {
     return (
         <StyledShoppingCart>
-            <Headline>Einkaufsliste</Headline>
+            <h1>Einkaufsliste</h1>
             {
                 Cart.map((active) => { return <StyledBtn key={active._id} onClick={() => removeFromShoppingCart(active)}>{active.name.de}</StyledBtn> })
             }
@@ -14,11 +14,8 @@ function ShoppingCart({ Cart, removeFromShoppingCart }) {
 const StyledShoppingCart = styled.div`
 padding: 20px;
 `
-const Headline = styled.h1`
-color: var(--textColor);
-margin-top: 2rem;
-margin-bottom: 2rem;
-`
+
+
 const StyledBtn = styled.button`
 padding: 10px;
 margin: 7px;

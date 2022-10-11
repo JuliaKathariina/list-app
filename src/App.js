@@ -6,12 +6,12 @@ import Items from './Components/Items.js';
 import { useEffect, useState } from 'react';
 import { setLocalStorage, loadLocalStorage } from './Components/Local.js';
 import ShoppingCart from './Components/ShoppingCart.js';
-import FuzzySearch from 'fuzzy-search'
+import { search } from "fast-fuzzy";
 import Header from './Components/Header';
 
 
 function App() {
-  const { search } =   (FuzzySearch);
+  
   const [data, setData] = useState(loadLocalStorage("itemList") ?? []);
   const [filter, setFilter] = useState([]);
   const [InputFieldData, setInputFieldData] = useState("");

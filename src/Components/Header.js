@@ -5,7 +5,7 @@ function Header() {
     <Headline>Shopping-App</Headline>
   )
 }
-const Headline = styled.h1`
+const Headline = styled.h2`
 color: var(--textColor);
 background-color: var(--backgroundColor);
 padding: 20px;
