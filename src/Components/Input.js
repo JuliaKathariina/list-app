@@ -9,13 +9,14 @@ function Input({ setInputFieldData, filterList }) {
     }
 
     return (
-
+       
         <div class="search_div">
             <input class="search_input"  name="text"  type="text" placeholder='Search for Items...' onChange={inputValue} />
             <div class="search_button">
             
             </div>
         </div>
+      
     )
 }
 

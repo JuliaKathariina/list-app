@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: gray;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 .search_div {
   position: absolute;
