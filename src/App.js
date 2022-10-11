@@ -71,7 +71,7 @@ function App() {
 }
 
 const MainContent = styled.div`
-background-color: var(--bodyColor);
+background-color: rosa;
 height: 100vh;
 `
 

@@ -1,22 +1,33 @@
-import "./Items.css";
+import styled from 'styled-components';
+
 
 function Items({ filter, toShoppingCart }) {
 
     return (
-        <div className="BodyPostion">
-            <div class="search_div">
+        <Wrapper>
             {
-                filter.map((itemName) => { return <button  class="search_input" key={itemName._id} onClick={() => toShoppingCart(itemName)}>{itemName.name.de}</button> })
+                filter.map((itemName) => { return <StyledBtn key={itemName._id} onClick={() => toShoppingCart(itemName)}>{itemName.name.de}</StyledBtn> })
             }
-            <div class="search_button">
-             <div class="fa-solid fa-magnifying-glass"></div>
-             </div>
-            </div>
-        </div>
+        </Wrapper >
     )
 }
 
-
-
+const Wrapper = styled.div`
+margin-top: 2rem;
+padding: 20px;
+`
+const StyledBtn = styled.button`
+padding: 10px;
+margin: 7px;
+background-color: var(--backgroundColor);
+color: var(--textColor);
+font-size: 1rem;
+border: 0;
+box-shadow: 0 0 10px black;
+:hover {
+    font-size: 1.1rem;
+    transition: all .3s;
+}
+`
 
 export default Items
